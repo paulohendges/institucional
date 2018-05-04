@@ -1,5 +1,5 @@
-# institucional
-Modelo institucional
+# Institucional
+Modelo de site institucional
 
 # Estrutura
 - Phalcon Framework 3.2 multicamadas
