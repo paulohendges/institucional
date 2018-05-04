@@ -1,0 +1,117 @@
+<style>
+
+    .bla { animation: animacao 0.9s ease-in alternate; }
+
+    @keyframes animacao {
+        from { 
+            width: 100px;
+        }
+        to { 
+            width: 75%;
+        }
+    }
+
+
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h5 title="Institucional"><u>Institucional</u></h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m3">
+            <ul class="collection institucionalul">
+                <li class="collection-item dismissable" id="1"><div>História</div></li>
+                <li class="collection-item dismissable" id="2"><div>Objetivo</div></li>
+                <li class="collection-item dismissable" id="3"><div>Departamentos</div></li>
+                <li class="collection-item dismissable" id="4"><div>Colaboradores</div></li>
+            </ul>
+        </div>
+        <div class="col s12 m9 bla" targetid="1" style="display: none">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel z-depth-3">
+                        <div class="row">
+                            <div class="col s12 background-title">
+                                <h5 title="História">Nossa História</h5>
+                            </div>
+                            <div class="col s12">
+                                <p style="text-align: justify; font-size: 18px" class="">
+                                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m9 bla" targetid="2" style="display: none">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel z-depth-3">
+                        <div class="row">
+                            <div class="col s12 background-title">
+                                <h5 title="Objetivos">Objetivos</h5>
+                            </div>
+                            <div class="col s12">
+                                <p style="text-align: justify; font-size: 18px" class="">
+                                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m9 bla" targetid="3" style="display: none">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel z-depth-3">
+                        <div class="row">
+                            <div class="col s12 background-title">
+                                <h5 title="Departamentos">Espaço físico, departamentos</h5>
+                            </div>
+                            <div class="col s12">
+                                <p style="text-align: justify; font-size: 18px" class="">
+                                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m9 bla" targetid="4" style="display: none">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel z-depth-3">
+                        <div class="row">
+                            <div class="col s12 background-title">
+                                <h5 title="Colaboradores">Nossa Equipe</h5>
+                            </div>
+                            <div class="col s12">
+                                <p style="text-align: justify; font-size: 18px" class="">
+                                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('li').click(function () {
+            $('.bla').hide();
+            $('li.collection-item').removeClass('active');
+            $(this).addClass('active');
+            var targetId = $(this).attr('id');
+            $('div[targetid="' + targetId + '"]').show();
+        });
+        $('ul li.collection-item').first().click();            
+    });
+</script>

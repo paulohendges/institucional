@@ -1,0 +1,48 @@
+<div class="parallax-container" id="testeagain" style="opacity: 0">
+    <div class="parallax"><img src="<?= $this->url->getBaseUri() ?><?=$objAbout->getImgPathAbout()?>"></div>
+    <div class="container no-pad-bot center">
+        <h3 class="white-text" title="<?=$objAbout->getTitleAbout()?>"><?=$objAbout->getImgTitle()?></h3>
+        <div class="row">
+            <div class="col s12 flow-text">
+                <p class="white-text"><?=$objAbout->getImgDescription()?></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section" id="container-index">
+    <div class="row">
+        <div class="col s12 center background-title">
+            <h5 title="<?=$objAbout->getTitleAbout()?>"><?=$objAbout->getTitleAbout()?></h5>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center">
+                <p class="flow-text" style="text-align: justify">
+                    <?=$objAbout->getDescriptionAbout()?>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="panels-sobrenos" style="display: none">
+        <?php foreach ($objAboutPanels as $panel) { ?>
+            <div class="col s12 m4">
+                <div class="row z-depth-2" style="margin-right: 5px">
+                    <div class="col s12 center">
+                        <div class="cor-default" style="padding-top: 5px; margin-top: 10px;">
+                            <i class="material-icons white-text" style="font-size: 3rem"><?=$panel->getIcon()?></i>
+                        </div>
+                    </div>
+                    <div class="col s12 center" style="margin-top: 8px">
+                        <h5> <?= $panel->getTitle() ?> </h5>
+                    </div>
+                    <div class="col s12">
+                        <blockquote class="z-depth-5">
+                            <?=$panel->getDescription()?>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
+    </div>
+</div>

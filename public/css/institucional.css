@@ -1,0 +1,135 @@
+/* 
+    Created on : 08/11/2017, 11:04:06
+    Author     : phendges
+*/
+
+/* para o body e footer flex */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.brand-logo{
+    color: white !important;
+}
+/* configurações do menu */
+
+nav {
+    background-color: black !important;
+}
+
+nav ul a:hover {
+    background-color: rgba(228, 207, 207, 0.5);
+    color: white !important;
+}
+
+#sidenav-overlay {
+    position: unset !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 0 !important;
+    background-color: rgba(0,0,0,0.5) !important;
+    z-index: 997 !important;
+    will-change: opacity !important;
+}
+
+.nav-wrapper ul li.active {
+    color: white !important;
+    background-color: rgba(228, 207, 207, 0.5);
+}
+
+.nav-wrapper ul li.active a{
+    color: white !important;
+}
+
+/*.nav-wrapper ul li.active span{
+    background-color: rgba(10,23,55,0.5);
+}*/
+
+/* configuracoes parallax */
+.parallax-container {
+    height: 300px !important;
+}
+
+
+
+/* configurações footer */
+
+footer{
+    background-color: #627c8e !important;
+}
+.ul-midias li a i{
+    background-color: white;
+    border-radius: 8px;
+    transition: 0.8s;
+}
+.ul-midias li a i:hover{
+    background-color: #664169;
+    border-radius: 8px;
+    transition: 0.8s;
+}
+.page-footer .footer-copyright{
+    background-color: rgba(191, 161, 161, 0.08) !important;
+}
+
+#container-index {
+    padding-top: 20px;
+}
+
+blockquote{
+    border-left: 5px solid #627c8e   !important;
+    padding: 15px !important;
+}
+
+.cor-default{
+    background-color: black !important;
+}
+.background-title{
+    background-color: #627c8e !important;
+    color: white !important;
+}
+.logo {
+    width: 140px !important;
+    margin-top: 8%;
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 80px !important;
+        line-height: 80px !important;
+    }
+}
+
+.table-of-contents a.active{
+    border-left: 2px solid #627c8e !important;
+}
+
+.table-of-contents a:hover{
+    border-left: 2px solid #627c8e !important;
+}
+
+/* institucional */
+.institucionalul li{
+    transition: 0.9s;
+    background-color: #627c8e !important;
+    color: white !important;
+}
+.institucionalul li:hover{
+    transition: 0.9s;
+    cursor: pointer;
+    background-color: black !important;
+}
+.institucionalul li.active{
+    transition: 0.9s;
+    cursor: pointer;
+    background-color: black !important;
+}
+.institucionalul li i{
+    color: white !important;
+}

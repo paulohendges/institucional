@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h5 title="Negociação"><u>Conheça nossos Serviços</u></h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m9 l10">
+                <?php foreach ($arrWorks as $key => $work) { ?>
+                    <div id="<?=$work['id']?>" class="section scrollspy"> 
+                        <div class="row">
+                            <div class="col s12 background-title">
+                                <h5 title="<?=$work['title']?>"><?=$work['title']?></h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <?php foreach ($work['workscards'] as $keycards => $workcard) { ?>
+                                    <div class="col s12 m3">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="<?= $this->url->getBaseUri() ?><?=$workcard['img_path']?>">
+                                                <span class="card-title">Card Title</span>
+                                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                            </div>
+                                            <div class="card-content">
+                                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                <?php } ?>
+        </div>
+        <div class="col hide-on-small-only m3 l2">
+            <ul class="section table-of-contents" style="position: fixed">
+                <?php foreach ($arrWorks as $key => $work) { ?>
+                    <li><a href="#<?=$work['id']?>"><?=$work['title']?></a></li>
+                <?php } ?>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+</script>
