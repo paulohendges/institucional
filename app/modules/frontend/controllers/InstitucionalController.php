@@ -14,7 +14,6 @@ class InstitucionalController extends ControllerBase
         $objWorksCards = WorksCardsDb::findWorksCards()->toArray();
         
         $arrWorks = $this->mergeWorks($objWorks, $objWorksCards);
-        
         $this->view->arrWorks = $arrWorks;
         
     }

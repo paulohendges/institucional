@@ -30,4 +30,7 @@ $(document).ready(function () {
     ];
 
     Materialize.scrollFire(options);
-});
+   $('.flexslider').flexslider({
+    animation: "slide",
+      });
+    });

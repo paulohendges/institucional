@@ -1,15 +1,15 @@
 <style>
 
-    .bla { animation: animacao 0.9s ease-in alternate; }
+    /*.bla { animation: animacao 0.9s ease-in alternate; }*/
 
-    @keyframes animacao {
+/*    @keyframes animacao {
         from { 
             width: 100px;
         }
         to { 
             width: 75%;
         }
-    }
+    }*/
 
 
 </style>
@@ -110,7 +110,7 @@
             $('li.collection-item').removeClass('active');
             $(this).addClass('active');
             var targetId = $(this).attr('id');
-            $('div[targetid="' + targetId + '"]').show();
+            $('div[targetid="' + targetId + '"]').toggle("slow");
         });
         $('ul li.collection-item').first().click();            
     });

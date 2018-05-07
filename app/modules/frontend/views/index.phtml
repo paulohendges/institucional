@@ -14,6 +14,7 @@
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
+        <link rel="stylesheet" href="<?= $this->url->getBaseUri() ?>/flexslider/flexslider.css" type="text/css" media="screen" />
         <link type="text/css" rel="stylesheet" href="<?= $this->url->getBaseUri() ?>materialize/css/materialize.min.css"  media="screen,projection"/>
         <link type="text/css" rel="stylesheet" href="<?= $this->url->getBaseUri() ?>css/institucional.css"  media="screen,projection"/>
 
@@ -23,6 +24,8 @@
             <?=$objInit->getTitle();?>
         </title>
         <script type="text/javascript" src="<?= $this->url->getBaseUri() ?>js/jquery-3.2.1.min.js"></script>
+        <!-- FlexSlider -->
+        <script defer src="<?= $this->url->getBaseUri() ?>flexslider/jquery.flexslider.js"></script>
         <script type="text/javascript" src="<?= $this->url->getBaseUri() ?>materialize/js/materialize.min.js"></script>
         <script type="text/javascript" src="<?= $this->url->getBaseUri() ?>js/institucional.js"></script>
         <script type="text/javascript">
@@ -53,14 +56,14 @@
                             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                             <ul class="hide-on-med-and-down right">
                                 <li class="<?= $controller == 'index' ? 'active' : '' ?>"><a href="<?= $this->url->getBaseUri() ?>"><i class="material-icons">home</i></a></li>
-                                <li class="<?= $controller == 'sobre' ? 'active' : '' ?>"><a href="<?= $this->url->getBaseUri() ?>sobre/"><span>SOBRE</span></a></li>
+                                <li class="<?= $controller == 'historia' ? 'active' : '' ?>"><a href="<?= $this->url->getBaseUri() ?>historia/"><span>HISTORIA</span></a></li>
                                 <li class="<?= $controller == 'institucional' ? 'active' : '' ?>"><a href="<?= $this->url->getBaseUri() ?>institucional/"><span>INSTITUCIONAL</span></a></li>
                                 <li class="<?= $controller == 'servicos' ? 'active' : '' ?>"><a href="<?= $this->url->getBaseUri() ?>servicos/"><span>SERVIÇOS</span></a></li>
                                 <li class="<?= $controller == 'contato' ? 'active' : '' ?>"><a href="<?= $this->url->getBaseUri() ?>contato/"><span>CONTATO</span></a></li>
                             </ul>
                             <!-- nav mobile -->
                             <ul class="side-nav" id="mobile-demo">
-                                <li class="<?= $controller == 'sobre' ? 'active' : '' ?>"><a href="<?= $this->url->getBaseUri() ?>sobre/"><span>SOBRE</span></a></li>
+                                <li class="<?= $controller == 'historia' ? 'active' : '' ?>"><a href="<?= $this->url->getBaseUri() ?>historia/"><span>HISTORIA</span></a></li>
                                 <li class="<?= $controller == 'servicos' ? 'active' : '' ?>"><a href="<?= $this->url->getBaseUri() ?>servicos/"><span>SERVIÇOS<span></a></li>
                                 <li class="<?= $controller == 'contato' ? 'active' : '' ?>"><a href="<?= $this->url->getBaseUri() ?>contato/"><span>CONTATO</span></a></li>
                             </ul>
