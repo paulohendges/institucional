@@ -1,21 +1,72 @@
-<div class="row">
-    <div class="col s6">
+<div class="container">
+
+    <div class="row">
+        <div class="col s6">
+
+                <div id="carousel" class="flexslider image-thumb">
+
+                    <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                        <ul class="slides" style="width: 4000%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                            <li id="li" data-thumb="<?= $this->url->getBaseUri() ?>img/history_slider/img1.jpg" class="" style="width: 210px; float: left; display: block;">
+                                <a href="<?= $this->url->getBaseUri() ?>img/history_slider/img1.jpg" id="ctl00_BodyContent_rptImagens2_ctl00_lnk" class="ui-link" data-ajax="false">
+                                    <img id="img" src="<?= $this->url->getBaseUri() ?>img/history_slider/img1.jpg">
+                                </a>
+                            </li>
+                            <li id="li" data-thumb="<?= $this->url->getBaseUri() ?>img/history_slider/img2.jpg" style="width: 210px; float: left; display: block;" class="">
+                                <a href="<?= $this->url->getBaseUri() ?>img/history_slider/img2.jpg" id="ctl00_BodyContent_rptImagens2_ctl01_lnk" class="ui-link" data-ajax="false">
+                                    <img id="img" src="<?= $this->url->getBaseUri() ?>img/history_slider/img2.jpg">
+                                </a>
+                            </li>
+                            <li id="li" data-thumb="<?= $this->url->getBaseUri() ?>img/history_slider/img3.jpg" style="width: 210px; float: left; display: block;" class="flex-active-slide">
+                                <a href="<?= $this->url->getBaseUri() ?>img/history_slider/img3.jpg" id="ctl00_BodyContent_rptImagens2_ctl02_lnk" class="ui-link" data-ajax="false">
+                                    <img id="img" src="<?= $this->url->getBaseUri() ?>img/history_slider/img3.jpg">
+                                </a>
+                            </li>
+                            <!-- items mirrored twice, total of 12 -->
+                        </ul>
+                    </div>
+                    <ul class="flex-direction-nav">
+                        <li>
+                            <a class="flex-prev flex-disabled" href="#">❰</a>
+                        </li>
+                        <li>
+                            <a class="flex-next" href="#">❱</a>
+                        </li>
+                    </ul>
+                </div>
+                    <h4>
+                        BLA BLA BLA
+                    </h4>
+            <p class="flow-text" style="font-size: 16px !important;">
+                Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker
+            </p>
+            </div>
+            <div class="col s6">
+                
+                <div id="slider" class="flexslider image-master">
+
+                    <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                        <ul class="slides" style="width: 4000%; transition-duration: 0s; transform: translate3d(-1306px, 0px, 0px);">
+                            <li id="li" data-thumb="<?= $this->url->getBaseUri() ?>img/history_slider/img1.jpg" class="" style="width: 653px; float: left; display: block;">
+                                <a href="<?= $this->url->getBaseUri() ?>img/history_slider/img1.jpg" id="ctl00_BodyContent_rptImagens1_ctl00_lnk" rel="prettyPhoto[gallery2]" class="ui-link" data-ajax="false">
+                                    <img id="img" src="<?= $this->url->getBaseUri() ?>img/history_slider/img1.jpg">
+                                </a>
+                            </li>
+                            <li id="li" data-thumb="<?= $this->url->getBaseUri() ?>img/history_slider/img2.jpg" style="width: 653px; float: left; display: block;" class="">
+                                <a href="<?= $this->url->getBaseUri() ?>img/history_slider/img2.jpg" id="ctl00_BodyContent_rptImagens1_ctl01_lnk" rel="prettyPhoto[gallery2]" class="ui-link" data-ajax="false">
+                                    <img id="img" src="<?= $this->url->getBaseUri() ?>img/history_slider/img2.jpg">
+                                </a>
+                            </li>
+                            <li id="li" data-thumb="<?= $this->url->getBaseUri() ?>img/history_slider/img3.jpg" style="width: 653px; float: left; display: block;" class="flex-active-slide">
+                                <a href="<?= $this->url->getBaseUri() ?>img/history_slider/img3.jpg" id="ctl00_BodyContent_rptImagens1_ctl02_lnk" rel="prettyPhoto[gallery2]" class="ui-link" data-ajax="false">
+                                    <img id="img" src="<?= $this->url->getBaseUri() ?>img/history_slider/img3.jpg">
+                                </a>
+                            </li>
+                            <!-- items mirrored twice, total of 12 -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
         
-        <div class="flexslider">
-          <ul class="slides">
-            <li>
-              <img src="<?=$this->url->getBaseUri()?>img/history_slider/img1.jpg" />
-            </li>
-            <li>
-              <img src="slide2.jpg" />
-            </li>
-            <li>
-              <img src="slide3.jpg" />
-            </li>
-            <li>
-              <img src="slide4.jpg" />
-            </li>
-          </ul>
-        </div>
     </div>
 </div>

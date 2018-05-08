@@ -30,7 +30,38 @@ $(document).ready(function () {
     ];
 
     Materialize.scrollFire(options);
-   $('.flexslider').flexslider({
-    animation: "slide",
-      });
+    
+    $('.slider').flexslider({
+        animation: "slide",
+        directionNav: false
+    });
+
+    //$('.detalhe').flexslider({
+    //    animation: "slide",
+    //    controlNav: "thumbnails",
+    //    directionNav: false
+    //});
+
+    $('#carousel').flexslider({
+        animation: "slide",
+        directionNav: true,
+        nextText: "<",
+        prevText: ">",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: true,
+        itemWidth: 210,
+        itemMargin: 5,
+        asNavFor: '#slider'
+    });
+
+    $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        directionNav: false,
+        animationLoop: false,
+        slideshow: true,
+        sync: "#carousel",
+//        itemWidth: 500
+    });
     });
